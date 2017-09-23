@@ -234,7 +234,7 @@ public class PMT_PaymentCreator {
                             
                             paymentsToInsert.add(op);
                         }
-                        /*
+                        
                         else if (!thisOpp.IsClosed && 
                                         thisOpp.amount > 0 && thisOpp.npe01__payments_made__c == 0 && thisOpp.npe01__Number_of_Payments__c == 0 && !thisOpp.npe01__Do_Not_Automatically_Create_Payment__c) {
                             paymentsToInsert.add(new npe01__oppPayment__c(
@@ -244,7 +244,7 @@ public class PMT_PaymentCreator {
                                 npe01__paid__c = false
                             ));
                         }
-                        */
+                        
                 }
                 // put in the payment for closed opps       
                 if (!paymentsToInsert.isEmpty()) 
